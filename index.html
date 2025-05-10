@@ -16,6 +16,29 @@
     </style>
 </head>
 <body>
+    <button class="instruction-button" id="instruction-button">Instructions</button>
+
+    <div class="instructions-modal" id="instructions-modal">
+        <div class="instructions-content">
+            <button class="instructions-close-button" id="instructions-close-button">Close</button>
+            <h2>INSTRUCTIONS</h2>
+            <p>Hello!</p>
+        </div>
+    </div>
+
+    <script>
+        const instructionButton = document.getElementById('instruction-button');
+        const instructionsModal = document.getElementById('instructions-modal');
+        const closeButton = document.getElementById('instructions-close-button');
+
+        instructionButton.addEventListener('click', () => {
+            instructionsModal.style.display = 'flex';
+        });
+
+        closeButton.addEventListener('click', () => {
+            instructionsModal.style.display = 'none';
+        });
+    </script>
     <div id="splash-screen">
         <h3>Loading...</h3>
     </div>

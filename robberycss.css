@@ -45,28 +45,30 @@ h3{
             cursor: pointer;
         }
 
-        .instructions-modal {
+.instructions-modal {
     display: none;
     position: fixed;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    height: 50vh;
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-        .instructions-content {
-            background-color: rgb(17, 17, 39);
-            color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            width: 800px;
-            height: 800px;
-            overflow-y: auto; 
-        }
+.instructions-content {
+    background-color: rgb(17, 17, 39);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    height: 800px;
+    overflow-y: auto;
+    margin: auto;
+}
 
         .instructions-close-button {
             background-color: rgb(17, 17, 39);

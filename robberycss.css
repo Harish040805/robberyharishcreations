@@ -48,8 +48,8 @@ h3{
         .instructions-modal {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
+            top: 20%;
+            left: 50%;
             height: 50vh;
             background-color: rgba(0, 0, 0, 0.5);
             justify-content: center;

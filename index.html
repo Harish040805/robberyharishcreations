@@ -8,35 +8,23 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/Harish040805/robberyharishcreations/refs/heads/main/robberlogo.jfif" type="image/x-icon">
     <style>
         body{ background: url('https://raw.githubusercontent.com/Harish040805/robberyharishcreations/refs/heads/main/welcomepagebgimg.jfif');
-            background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+             background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
     </style>
 </head>
 <body>
-    <div id="splash-screen">
-        <h3>Loading...</h3>
-    </div>
+    <div id="splash-screen"><h3>Loading...</h3></div>
     <div id="main-content" style="display: none;">
         <br><br><br>
-      <center>
-          <h1 class="title">
-              GAME<br>
-              ROBBERY
-          </h1>
-      </center>
-        <center>
-        <img class="logoimage" src="https://raw.githubusercontent.com/Harish040805/robberyharishcreations/refs/heads/main/robberlogo.jfif" alt="image">
-        </center>
-        <br><br><br>
+      <center><h1 class="title">GAME<br> ROBBERY</h1></center>
+    <center><img class="logoimage" src="https://raw.githubusercontent.com/Harish040805/robberyharishcreations/refs/heads/main/robberlogo.jfif" alt="image"></center>
+        <br><br><br><br><br>
     </div>
-    <br><br>
     <center>
         <a href="https://harish040805.github.io/robberyharishcreations/robberyii.html" target="_self" rel="noopener noreferrer">
             <button class="Enter-the-palace">Enter the Palace</button>
         </a>
          <button class="instruction-button" id="instruction-button">Instructions</button>
     </center>
-           
-        
     <div class="instructions-modal" id="instructions-modal">
         <div class="instructions-content">
             <button class="instructions-close-button" id="instructions-close-button">Close</button>
@@ -59,27 +47,20 @@
             </p>
         </div>
     </div>
-
-    <script>
-        const instructionButton = document.getElementById('instruction-button');
-        const instructionsModal = document.getElementById('instructions-modal');
-        const closeButton = document.getElementById('instructions-close-button');
-
-        instructionButton.addEventListener('click', () => {
-            instructionsModal.style.display = 'flex';
-        });
-
-        closeButton.addEventListener('click', () => {
-            instructionsModal.style.display = 'none';
-        });
-    </script>
     <script>
       setTimeout(() => {
         document.getElementById('splash-screen').style.display = 'none';
         document.getElementById('main-content').style.display = 'block';
       }, 3000);
+        const instructionButton = document.getElementById('instruction-button');
+        const instructionsModal = document.getElementById('instructions-modal');
+        const closeButton = document.getElementById('instructions-close-button');
+        instructionButton.addEventListener('click', () => {
+            instructionsModal.style.display = 'flex';
+        });
+        closeButton.addEventListener('click', () => {
+            instructionsModal.style.display = 'none';
+        });
     </script>
 </body>
 </html>
-
-
